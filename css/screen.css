@@ -1,5 +1,5 @@
 body {
-background: khaki;
+background: white;
 
 
 }
@@ -10,7 +10,7 @@ html {
     font-family: "Helvetica Nueu", Helvetica,Arial, sans-serif;
     color: #111;
     padding: 24px 24px 0;
-
+    scroll-behavior: smooth;
     }
 
 ::-moz-selection {
@@ -64,7 +64,7 @@ figcaption {
 blockquote {
     font-style: italic;
     font-size: 23px;
-    line-height: 32;
+    line-height: 32px;
     margin:0 0 24px;
     font-family: "Times New Roman", serif;
 }
@@ -96,4 +96,34 @@ a:hover, a:focus {
 }
 a:visited, a:active {
     color: blueviolet;
+}
+table {
+    width: 100%;
+    border-spacing: 0;
+}
+
+th {
+    text-align: left;
+    background-color: grey
+}
+
+th,
+td {
+    padding: 4px 8px;
+    border-bottom: 1px solid gainsboro;
+}
+.odd {
+    background-color:  lightgoldenrodyellow;
+}
+/*Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) {
+    h1 {
+        font-size: 58px;
+        line-height: 64px;
+    }
+}
+@media (min-width: 768px) {
+    html {
+        padding:48px 48px 24px;
+    }
 }
